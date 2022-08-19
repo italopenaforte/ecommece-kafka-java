@@ -4,13 +4,20 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
+import java.util.concurrent.ExecutionException;
 
 public class NewOrderMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         var producer = new KafkaProducer<String, String>(properties());
         var value = "123,12345,222";
-        var record = new ProducerRecord<>("ECOMMERCE_NEW_ORDER",  value, value);
-        producer.send(record);
+        var record = new ProducerRecord<>("ECOMMERCE_NEW_ORDER", value, value);
+        producer.send(record, (response, exception) -> {
+            if (exception != null) {
+                exception.printStackTrace();
+                return;
+            }
+            System.out.println("sucesso " + response.topic() + "parition:" + response.partition() + "/ offset" + response.offset());
+        }).get();
     }
 
     private static Properties properties() {
