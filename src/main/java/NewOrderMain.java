@@ -1,7 +1,9 @@
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.common.serialization.StringSerializer;
+
 
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
@@ -11,13 +13,17 @@ public class NewOrderMain {
         var producer = new KafkaProducer<String, String>(properties());
         var value = "123,12345,222";
         var record = new ProducerRecord<>("ECOMMERCE_NEW_ORDER", value, value);
-        producer.send(record, (response, exception) -> {
-            if (exception != null) {
-                exception.printStackTrace();
+        Callback callback = (data, ex) -> {
+            if (ex != null) {
+                ex.printStackTrace();
                 return;
             }
-            System.out.println("sucesso " + response.topic() + "parition:" + response.partition() + "/ offset" + response.offset());
-        }).get();
+            System.out.println("success " + data.topic() + "partition:" + data.partition() + "/ offset" + data.offset());
+        };
+        var email = "Bem vindo! estamos processando sua solicitação";
+        var emailRecord = new ProducerRecord<>("ECOMMERCE_SEND_EMAIL", email, email);
+        producer.send(record, callback).get();
+        producer.send(emailRecord, callback).get();
     }
 
     private static Properties properties() {
