@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46779d9-c53a-4343-92cc-52284ec38fd0" name="Changes" comment="feat: add a consumer for the topic">
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmailService.java" afterDir="false" />
+    <list default="true" id="e46779d9-c53a-4343-92cc-52284ec38fd0" name="Changes" comment="feat: create an email service to dealing with new topic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConsumerFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/KafkaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FraudDetectorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewOrderMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -82,7 +87,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660939043048</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: move to a callback to dealing more then one producert">
+      <created>1661205508651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661205508651</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: create an email service to dealing with new topic">
+      <created>1661205529564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661205529564</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: create an email service to dealing with new topic">
+      <created>1661205546765</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661205546765</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +125,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: passes a callback to future function for printing the message when record is publisher into a topic" />
     <MESSAGE value="feat: add a consumer for the topic" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add a consumer for the topic" />
+    <MESSAGE value="feat: move to a callback to dealing more then one producert" />
+    <MESSAGE value="feat: create an email service to dealing with new topic" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create an email service to dealing with new topic" />
   </component>
 </project>
