@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46779d9-c53a-4343-92cc-52284ec38fd0" name="Changes" comment="refac: refactoring log service to see serialize in logs of messages">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GsonDeserializer.java" afterDir="false" />
+    <list default="true" id="e46779d9-c53a-4343-92cc-52284ec38fd0" name="Changes" comment="feat: pass ConsumerConfig for each of the services">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-email/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-fraud-detector/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-new-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-new-order/src/main/java/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FraudDetectorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KafkaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/ConsumerFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud-detector/src/main/java/FraudDetectorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GsonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/GsonDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/GsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/KafkaDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/KafkaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-log/src/main/java/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud-detector/src/main/java/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "13",
+    "last_directory_selection": "/home/darvin/IdeaProjects/ecommerce/service-email/src/main/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -58,7 +78,7 @@
   <component name="RunManager">
     <configuration name="NewOrderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NewOrderMain" />
-      <module name="ecommerce" />
+      <module name="service-new-order" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661212756134</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: pass ConsumerConfig for each of the services">
+      <created>1661215094308</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661215094308</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +207,7 @@
     <MESSAGE value="refac: removed unsed import" />
     <MESSAGE value="feat: modify dispatcher to dealing with any type and build a serializer" />
     <MESSAGE value="refac: refactoring log service to see serialize in logs of messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="refac: refactoring log service to see serialize in logs of messages" />
+    <MESSAGE value="feat: pass ConsumerConfig for each of the services" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: pass ConsumerConfig for each of the services" />
   </component>
 </project>
