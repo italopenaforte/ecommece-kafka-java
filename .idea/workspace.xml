@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46779d9-c53a-4343-92cc-52284ec38fd0" name="Changes" comment="feat: modify dispatcher to dealing with any type and build a serializer">
+    <list default="true" id="e46779d9-c53a-4343-92cc-52284ec38fd0" name="Changes" comment="refac: refactoring log service to see serialize in logs of messages">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GsonDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FraudDetectorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KafkaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewOrderMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661211904915</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refac: refactoring log service to see serialize in logs of messages">
+      <created>1661212756134</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661212756134</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +179,7 @@
     <MESSAGE value="refac: refactoring producer and add close method" />
     <MESSAGE value="refac: removed unsed import" />
     <MESSAGE value="feat: modify dispatcher to dealing with any type and build a serializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: modify dispatcher to dealing with any type and build a serializer" />
+    <MESSAGE value="refac: refactoring log service to see serialize in logs of messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="refac: refactoring log service to see serialize in logs of messages" />
   </component>
 </project>
